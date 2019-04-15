@@ -1,6 +1,30 @@
 {
   "name": "data-viz",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=8.11.3",
+    "npm": "=6.0.1"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "start-apollo": "node app.js",
+    "dev": "NODE_ENV=development nodemon ./src/server.js",
+    "test": "NODE_ENV=test APP_ENV=test jest --forceExit",
+    "lint": "eslint \"src/*.js\"",
+    "format": "prettier-eslint --write \"src/**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/niko79542/ChartViz.git"
+  },
+  "author": "niko79542",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niko79542/ChartViz/issues"
+  },
+  "homepage": "https://github.com/niko79542/ChartViz#readme",
   "private": true,
   "dependencies": {
     "react": "^16.8.6",
