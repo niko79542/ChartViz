@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Switch, Route, Router } from 'react-router-dom';
 import createBrowserHistory from 'history/createBrowserHistory';
 
-// Components
+import ChartBox from './ChartBox/ChartBox';
 
 const Intraday = () => (
   (
@@ -13,7 +13,9 @@ const Intraday = () => (
 
 const Landing = () => (
   (
-    <div>Landing</div>
+    <div>
+      <ChartBox />
+    </div>
   )
 );
 
