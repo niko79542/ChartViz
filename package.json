@@ -8,12 +8,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/server.js",
-    "start-apollo": "node app.js",
-    "dev": "NODE_ENV=development nodemon ./src/server.js",
-    "test": "NODE_ENV=test APP_ENV=test jest --forceExit",
-    "lint": "eslint \"src/*.js\"",
-    "format": "prettier-eslint --write \"src/**/*.js\""
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
@@ -27,15 +25,11 @@
   "homepage": "https://github.com/niko79542/ChartViz#readme",
   "private": true,
   "dependencies": {
+    "history": "^4.9.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

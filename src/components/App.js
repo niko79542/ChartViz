@@ -1,26 +1,34 @@
+// React
 import React, { Component } from 'react';
-import './App.css';
+import { Switch, Route, Router } from 'react-router-dom';
+import createBrowserHistory from 'history/createBrowserHistory';
 
-class App extends Component {
-  render() {
-    return (
+// Components
+
+const Intraday = () => (
+  (
+    <div>Intraday chart.</div>
+  )
+);
+
+const Landing = () => (
+  (
+    <div>Landing</div>
+  )
+);
+
+
+const App = () => (
+  (
+    <Router history={ createBrowserHistory() }>
       <div className="App">
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Switch>
+          <Route exact path="/intraday" component={ Intraday } />
+          <Route exact path="/" component={ Landing } />
+        </Switch>
       </div>
-    );
-  }
-}
+    </Router>
+  )
+);
 
 export default App;
