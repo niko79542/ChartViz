@@ -1,4 +1,4 @@
-# US Equity Data Viz Playground
+# US Equity Data Viz Playground - [Link](http://www.data-vis.com.s3-website-us-west-1.amazonaws.com/)
 
 Using a free trial to chart stock tickers, both on a daily and interaday time series.
 
