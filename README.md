@@ -21,3 +21,7 @@ We will be exploring certain techs to get our hands dirty.
 - GraphQL-Apollo for an internal API.
 - GraphQL subscriptions could be used for intraday chart with auto-refreshing.
 - AWS for cloud database + services. 
+
+# Teammates
+
+- Niko Skoularikis
